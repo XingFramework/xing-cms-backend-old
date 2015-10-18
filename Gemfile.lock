@@ -1,0 +1,17 @@
+PATH
+  remote: .
+  specs:
+    xing-cms-backend (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  xing-cms-backend!
+
+BUNDLED WITH
+   1.10.6
