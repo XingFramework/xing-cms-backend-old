@@ -1,6 +1,8 @@
+require 'xing/cms/serializers/page_serializer'
+
 module Xing
   module Cms
-    class Admin::PageSerializer < PageSerializer
+    class Admin::PageSerializer < ::Xing::Cms::PageSerializer
       attributes :url_slug, :published, :publish_start, :publish_end
 
       def links

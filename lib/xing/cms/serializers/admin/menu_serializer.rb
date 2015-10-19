@@ -1,3 +1,5 @@
+require 'xing/cms/serializers/menu_serializer'
+
 module Xing
   module Cms
     class Admin::MenuSerializer < MenuSerializer

@@ -1,6 +1,6 @@
 module Xing
   module Cms
-    class Page < ::Xing::Serializers::Base
+    class PageSerializer < ::Xing::Serializers::Base
       attributes :title, :keywords, :description, :layout, :contents
 
       def contents

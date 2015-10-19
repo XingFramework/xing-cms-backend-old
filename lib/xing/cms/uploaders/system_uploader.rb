@@ -1,3 +1,5 @@
+require 'carrierwave'
+
 module Xing
   module Cms
     class SystemUploader < CarrierWave::Uploader::Base

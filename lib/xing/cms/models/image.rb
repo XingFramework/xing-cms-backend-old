@@ -11,6 +11,9 @@
 #  updated_at         :datetime
 #
 
+require 'xing/cms/uploaders/image_uploader'
+require 'carrierwave/orm/activerecord'
+
 module Xing
   module Cms
     class Image < ActiveRecord::Base

@@ -1,12 +1,12 @@
 module Xing
   module Cms
     module Controllers
-      autoload :Admin::AdminController, 'xing/cms/controllers/admin/admin_controller'
-      autoload :Admin::BlogPostsController, 'xing/cms/controllers/admin/blog_posts_controller'
-      autoload :Admin::FroalaDocumentsController, 'xing/cms/controllers/admin/froala_documents_controller'
-      autoload :Admin::FroalaImagesController, 'xing/cms/controllers/admin/froala_images_controller'
-      autoload :Admin::MenuItemsController, 'xing/cms/controllers/admin/menu_items_controller'
-      autoload :Admin::PagesController, 'xing/cms/controllers/admin/pages_controller'
+      autoload :AdminController, 'xing/cms/controllers/admin/admin_controller'
+      autoload :BlogPostsController, 'xing/cms/controllers/admin/blog_posts_controller'
+      autoload :FroalaDocumentsController, 'xing/cms/controllers/admin/froala_documents_controller'
+      autoload :FroalaImagesController, 'xing/cms/controllers/admin/froala_images_controller'
+      autoload :MenuItemsController, 'xing/cms/controllers/admin/menu_items_controller'
+      autoload :PagesController, 'xing/cms/controllers/admin/pages_controller'
       autoload :MenusController, 'xing/cms/controllers/menus_controller'
       autoload :PagesController, 'xing/cms/controllers/pages_controller'
       autoload :TopicsController, 'xing/cms/controllers/topics_controller'
@@ -14,16 +14,8 @@ module Xing
   end
 end
 
-require 'xing/cms/engine'
-require 'xing/cms/controllers/admin/admin_controller'
-require 'xing/cms/controllers/admin/blog_posts_controller'
-require 'xing/cms/controllers/admin/froala_documents_controller'
-require 'xing/cms/controllers/admin/froala_images_controller'
-require 'xing/cms/controllers/admin/menu_items_controller'
-require 'xing/cms/controllers/admin/pages_controller'
-require 'xing/cms/controllers/menus_controller'
-require 'xing/cms/controllers/pages_controller'
-require 'xing/cms/controllers/topics_controller'
+
+require 'xing/cms/admin'
 require 'xing/cms/mappers/content_block_mapper'
 require 'xing/cms/mappers/menu_item_mapper'
 require 'xing/cms/mappers/menu_mapper'
@@ -51,3 +43,6 @@ require 'xing/cms/serializers/page_serializer'
 require 'xing/cms/uploaders/doc_uploader'
 require 'xing/cms/uploaders/image_uploader'
 require 'xing/cms/uploaders/system_uploader'
+#require 'xing/cms/observers/sitemap_observer'
+#require 'xing/cms/observers/page_snapshot_observer'
+require 'xing/cms/sitemap'

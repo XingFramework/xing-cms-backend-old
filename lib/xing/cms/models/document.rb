@@ -11,11 +11,14 @@
 #  updated_at        :datetime
 #
 
+require 'xing/cms/uploaders/doc_uploader'
+require 'carrierwave/orm/activerecord'
+
 module Xing
   module Cms
     class Document < ActiveRecord::Base
 
-      mount_uploader :data, DocUploader, :mount_on => :data_file_name
+      mount_uploader :data, ::Xing::Cms::DocUploader, :mount_on => :data_file_name
       validates_integrity_of :data
     end
   end
